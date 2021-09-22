@@ -1,11 +1,11 @@
 :root {
 	color-scheme: light dark;
+	font-family: sans-serif;
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
 h1 {
-	font: -apple-system-title4;
 	text-align: center;
 }
 
