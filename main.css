@@ -30,7 +30,15 @@ a {
 	max-width: 10em;
 	height: auto;
 	border-radius: 50%;
+	object-fit: scale-down;
 }
+
+/* Fit entire avatar on really small screens */
+@media (max-width: 600px) {
+	img {
+	  width: 100%;
+	}
+  }
 
 .contact {
 	display: flex;
