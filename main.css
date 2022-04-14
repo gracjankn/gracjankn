@@ -5,10 +5,11 @@
 
 h1 {
 	text-align: center;
+	font-size: 5vh;
 }
 
 a {
-	font-size: 3em;
+	font-size: 10vh;
 	margin: 0.1em;
 }
 
@@ -27,7 +28,7 @@ a {
 .avatar {
 	display: block;
 	margin: 1em auto;
-	max-width: 10em;
+	max-width: 30vh;
 	height: auto;
 	object-fit: scale-down;
 }
@@ -37,7 +38,7 @@ a {
 	img {
 	  width: 100%;
 	}
-  }
+}
 
 .contact {
 	display: flex;
