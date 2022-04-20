@@ -5,11 +5,11 @@
 
 h1 {
 	text-align: center;
-	font-size: 5vh;
+	font-size: 3rem;
 }
 
 a {
-	font-size: 10vh;
+	font-size: 4rem;
 	padding: 0.1em;
 }
 
@@ -35,7 +35,7 @@ a:focus-visible {
 .avatar {
 	display: block;
 	margin: 1em auto;
-	max-width: 10em;
+	max-width: 15em;
 	height: auto;
 	object-fit: scale-down;
 }
