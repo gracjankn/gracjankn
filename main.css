@@ -32,21 +32,6 @@ a:focus-visible {
 	outline: 4px solid black;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		background: #1e1e1e;
-		color: white;
-	}
-
-	.matrix,
-	.github {
-	fill: white;
-}
-	a:focus-visible {
-		outline: 4px solid white;
-}
-}
-
 .avatar {
 	display: block;
 	margin: 1em auto;
@@ -66,4 +51,19 @@ a:focus-visible {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		background: #1e1e1e;
+		color: white;
+	}
+
+	.matrix,
+	.github {
+	fill: white;
+}
+	a:focus-visible {
+		outline: 4px solid white;
+}
 }
