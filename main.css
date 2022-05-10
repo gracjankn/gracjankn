@@ -63,6 +63,10 @@ a:focus-visible {
 	.github {
 	fill: white;
 }
+	a {
+		color: #ffcb00;
+	}
+	
 	a:focus-visible {
 		outline: 4px solid white;
 }
