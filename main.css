@@ -69,8 +69,11 @@ a:focus-visible {
 		background: #1e1e1e;
 		color: white;
 	}
+	
+	.contact-link {
+		color: white;
+	}
 
-	.matrix,
 	.github {
 	fill: white;
 }
