@@ -77,7 +77,7 @@ a:focus-visible {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		background: #1e1e1e;
+		background: #0c0c0c;
 		color: white;
 	}
 	
