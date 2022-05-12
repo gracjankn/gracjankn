@@ -23,9 +23,16 @@ li, p {
 	font-size: 1.25rem;
 }
 
+.contact {
+	grid-gap: .4rem;
+	display: grid;
+	margin: 1em 0;
+}
+
 .contact-icon {
-	font-size: 4rem;
-	padding: 0.1em;
+	font-size: 2.25rem;
+	text-decoration: none;
+	color: black;
 }
 
 a:focus-visible {
