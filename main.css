@@ -35,6 +35,10 @@ li, p {
 	color: black;
 }
 
+.contact-link svg {
+	padding-right: .3rem;
+}
+
 a:focus-visible {
 	outline: 4px solid black;
 }
