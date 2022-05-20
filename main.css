@@ -33,7 +33,7 @@ li, p {
 	grid-gap: .4rem;
 	display: grid;
 	margin: 1em auto;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: repeat(3, auto);
 }
 
 /* Properties for each individual contact link */
