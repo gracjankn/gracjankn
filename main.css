@@ -37,14 +37,14 @@ li, p {
 }
 
 /* Properties for each individual contact link */
-.contact-link {
+.contact a {
 	font-size: 2.25rem;
 	text-decoration: none;
 	color: black;
 }
 
 /* Properties for the icon inside of each contact links */
-.contact-link svg {
+.contact a svg {
 	padding-right: .3rem;
 }
 
@@ -69,7 +69,7 @@ a:focus-visible {
 		color: white;
 	}
 	
-	.contact-link {
+	.contact a {
 		color: white;
 	}
 
@@ -96,7 +96,7 @@ a:focus-visible {
 		margin: 1rem 0;
 	}
 	
-	.contact-link {
+	.contact a {
 		font-size: 1.7rem;
 	}
 }
