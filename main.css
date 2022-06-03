@@ -29,7 +29,7 @@ li, p {
 
 /* Properties for the entire contact section */
 .contact {
-	max-width: 700px;
+	max-width: 750px;
 	grid-gap: .4rem;
 	display: grid;
 	margin: 1em auto;
