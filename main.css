@@ -80,6 +80,10 @@ a:focus-visible {
 		color: #ffcb00;
 	}
 	
+	::selection {
+		background: rgba(255, 203, 0, 0.5);
+	}
+	
 	a:focus-visible {
 		outline: 4px solid white;
 }
