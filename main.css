@@ -48,7 +48,6 @@ li, p {
 	padding-right: .3rem;
 }
 
-
 /* Display a solid black outline when selecting links using the tab key */
 a:focus-visible {
 	outline: 4px solid black;
@@ -74,8 +73,9 @@ a:focus-visible {
 	}
 
 	.github {
-	fill: white;
-}
+		fill: white;
+	}
+
 	a {
 		color: #ffcb00;
 	}
@@ -86,13 +86,13 @@ a:focus-visible {
 	
 	a:focus-visible {
 		outline: 4px solid white;
-}
+	}
 }
 
 /* Properties for devices with screen width of 600px or lower */
 @media (max-width: 600px) {
 	img {
-	  width: 100%;
+		width: 100%;
 	}
 	
 	.contact {
