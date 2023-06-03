@@ -106,7 +106,6 @@ a:focus-visible {
 	}
 	
 	.contact {
-		grid-template-columns: repeat(2, auto);
 		margin: 1rem 0;
 	}
 	
