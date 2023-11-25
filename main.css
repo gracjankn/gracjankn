@@ -1,15 +1,18 @@
-/* Licensed under SIL Open Font License, 1.1 from The Bakbak One Project Authors (https://github.com/googlefonts/bakbak) */
+/* Hubot Sans is licensed under the SIL Open Font License v1.1 from GitHub (https://github.com/github/hubot-sans) */
+
 
 @font-face {
-  font-family: 'Bakbak One';
-  font-style: normal;
-  font-weight: 400;
-  src: url(bakbak-one.woff2) format('woff2');
+  font-family: 'Hubot Sans';
+  src:
+	url('Hubot-Sans.woff2') format('woff2 supports variations'),
+	url('Hubot-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
 }
 
 /* Properties for the entire site */
 :root {
-	font-family: 'Bakbak One', sans-serif;
+	font-family: 'Hubot Sans', sans-serif;
 	max-width: 900px;
 	margin: auto;
 	line-height: 1.7;
@@ -22,6 +25,7 @@ h1, h2, h3, p {
 
 h1 {
 	font-size: 3rem;
+	font-style: "Black Narrow";
 }
 
 h2 {
