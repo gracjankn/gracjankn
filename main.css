@@ -74,6 +74,17 @@ a:focus-visible {
 	object-fit: scale-down;
 }
 
+#iMessagePublicKey {
+	cursor: pointer;
+	padding: 10px;
+	margin-top: -20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	user-select: none;
+	font-size: 1.25rem;
+	word-wrap: break-word;
+}
+
 /* Specify colors for dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -100,6 +111,10 @@ a:focus-visible {
 	a:focus-visible {
 		outline: 4px solid white;
 	}
+	
+	#iMessagePublicKey {
+		border-color: white;
+	}
 }
 
 /* Properties for devices with screen width of 600px or lower */
@@ -114,5 +129,10 @@ a:focus-visible {
 	
 	.contact a {
 		font-size: 2rem;
+	}
+	
+	#iMessagePublicKey {
+		width: 100%;
+		padding: 5px;
 	}
 }
