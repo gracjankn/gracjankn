@@ -40,8 +40,8 @@ li, p {
 	font-size: 1.25rem;
 }
 
-/* Properties for the entire contact section */
-.contact {
+/* Properties for the entire links section */
+.links {
 	max-width: 750px;
 	display: flex;
 	flex-wrap: wrap;
@@ -50,14 +50,14 @@ li, p {
 	gap: 0.4rem;
 }
 
-/* Properties for each individual contact link */
-.contact a {
+/* Properties for each individual link */
+.links a {
 	font-size: 2.25rem;
 	color: black;
 }
 
-/* Properties for the icon inside of each contact links */
-.contact a svg {
+/* Properties for the icon inside of each link */
+.links a svg {
 	padding-right: .3rem;
 }
 
@@ -72,6 +72,44 @@ a:focus-visible {
 	max-width: 15em;
 	height: auto;
 	object-fit: scale-down;
+}
+
+.PublicKeySection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* CSS */
+.CopyKeyButton {
+	margin-left: 10px;
+	align-items: center;
+	background-color: #0A66C2;
+	border: 0;
+	border-radius: 100px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-flex;
+	font: inherit;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	touch-action: manipulation;
+	transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	vertical-align: middle;
+}
+
+.CopyKeyButton:hover,
+.CopyKeyButton:focus { 
+	background-color: #16437E;
+	color: #ffffff;
+}
+
+.CopyKeyButton:active {
+	background: #09223b;
+	color: rgb(255, 255, 255, .7);
 }
 
 #iMessagePublicKey {
@@ -92,7 +130,7 @@ a:focus-visible {
 		color: white;
 	}
 	
-	.contact a {
+	.links a {
 		color: white;
 	}
 
@@ -127,12 +165,26 @@ a:focus-visible {
 		margin: 1rem 0;
 	}
 	
-	.contact a {
+	.links a {
 		font-size: 2rem;
+	}
+	
+	.PublicKeySection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+		
+	.iMessageHeading,
+	.CopyKeyButton,
+	#iMessagePublicKey {
+		margin-top: 15px;
+		margin-bottom: 0px;
+		}
 	}
 	
 	#iMessagePublicKey {
 		width: 100%;
 		padding: 5px;
 	}
-}
