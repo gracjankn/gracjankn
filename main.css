@@ -1,6 +1,5 @@
 /* Hubot Sans is licensed under the SIL Open Font License v1.1 from GitHub (https://github.com/github/hubot-sans) */
 
-
 @font-face {
   font-family: 'Hubot Sans';
   src:
@@ -81,7 +80,6 @@ a:focus-visible {
 	flex-wrap: wrap;
 }
 
-/* CSS */
 .CopyKeyButton {
 	margin-left: 10px;
 	align-items: center;
