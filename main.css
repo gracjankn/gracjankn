@@ -41,7 +41,7 @@ li, p {
 
 /* Properties for the entire links section */
 .links {
-	max-width: 750px;
+	max-width: 60vw;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1em auto;
@@ -51,8 +51,26 @@ li, p {
 
 /* Properties for each individual link */
 .links a {
-	font-size: 2.25rem;
-	color: black;
+	font-size: 1.75rem;
+	width: 25vw;
+	text-align: center;
+	color: white;
+	background-color: #523bc4;
+	border-radius: 20px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.links a.github {
+	background-color: black;
+}
+
+a.imessage {
+	background-color: #387df6;
+}
+
+.links a.email {
+	background-color: #EA4335;
 }
 
 /* Properties for the icon inside of each link */
@@ -131,8 +149,9 @@ a:focus-visible {
 		color: white;
 	}
 
-	.github {
-		color: white;
+	.links a.github {
+		color: black;
+		background-color: white;
 	}
 
 	a {
@@ -162,8 +181,12 @@ a:focus-visible {
 		margin: 1rem 0;
 	}
 	
+	.links {
+		max-width: 100%;
+	}
+	
 	.links a {
-		font-size: 2rem;
+		width: 43vw;
 	}
 	
 	.PublicKeySection {
