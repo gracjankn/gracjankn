@@ -129,10 +129,10 @@ a:focus-visible {
 }
 
 #iMessagePublicKey {
-	padding: 10px;
+	max-width: fit-content;
 	margin-top: -20px;
-	border: 1px solid black;
-	border-radius: 5px;
+	border: 2px dashed black;
+	border-radius: 10px;
 	user-select: none;
 	font-size: 1.25rem;
 	word-wrap: break-word;
