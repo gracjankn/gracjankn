@@ -92,6 +92,7 @@ a:focus-visible {
 }
 
 .PublicKeySection {
+	font-size: 1.25rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -115,6 +116,10 @@ a:focus-visible {
 	touch-action: manipulation;
 	transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 	vertical-align: middle;
+}
+
+.CopyKeyButton svg {
+	padding-right: .3rem;
 }
 
 .CopyKeyButton:hover,
