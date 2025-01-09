@@ -51,7 +51,6 @@ li, p {
 	width: 25vw;
 	text-align: center;
 	color: white;
-	background-color: #523bc4;
 	border-radius: 20px;
 	padding: 5px;
 	text-decoration: none;
@@ -62,20 +61,24 @@ li, p {
 	transform: scale(0.90);
 }
 
-.links a.github {
+.mastodon {
+	background-color: #523bc4;
+}
+
+.github {
 	background-color: black;
 }
 
-a.imessage {
+.imessage {
 	background-color: #387df6;
 }
 
-.links a.email {
+.email {
 	background-color: #EA4335;
 }
 
 /* Properties for the icon inside of each link */
-.links a svg {
+a svg {
 	padding-right: .3rem;
 }
 
@@ -152,12 +155,8 @@ a:focus-visible {
 		background: #0c0c0c;
 		color: white;
 	}
-	
-	.links a {
-		color: white;
-	}
 
-	.links a.github {
+	a.github {
 		color: black;
 		background-color: white;
 	}
@@ -205,9 +204,8 @@ a:focus-visible {
 		text-align: center;
 	}
 		
-	.iMessageHeading,
-	.CopyKeyButton,
-	#iMessagePublicKey {
+	/* Styles every direct child element of PublicKeySection */
+	.PublicKeySection > * {
 		margin-top: 15px;
 		margin-bottom: 0px;
 		}
