@@ -59,6 +59,11 @@ li, p {
 	border-radius: 20px;
 	padding: 5px;
 	text-decoration: none;
+	transition: transform 0.2s ease;
+}
+
+.links a:active {
+	transform: scale(0.90);
 }
 
 .links a.github {
@@ -115,6 +120,7 @@ a:focus-visible {
 	text-align: center;
 	touch-action: manipulation;
 	transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	transition: transform 0.2s ease;
 	vertical-align: middle;
 }
 
@@ -131,6 +137,7 @@ a:focus-visible {
 .CopyKeyButton:active {
 	background: #09223b;
 	color: rgb(255, 255, 255, .7);
+	transform: scale(0.90);
 }
 
 #iMessagePublicKey {
