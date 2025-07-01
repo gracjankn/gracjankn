@@ -243,5 +243,6 @@ a:focus-visible {
 	#iMessagePublicKey {
 		width: 95%;
 		padding: 5px;
+		margin-top: 15px;
 	}
 }
