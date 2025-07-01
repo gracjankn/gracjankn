@@ -15,6 +15,8 @@
 	max-width: 900px;
 	margin: auto;
 	line-height: 1.7;
+	color: var(--ctp-latte-text);
+	background-color: var(--ctp-latte-base);
 }
 
 /* Center and add margins to all headings and paragraphs */
@@ -50,7 +52,7 @@ li, p {
 	font-size: 1.75rem;
 	width: 25vw;
 	text-align: center;
-	color: white;
+	color: var(--ctp-latte-mantle);
 	border-radius: 20px;
 	padding: 5px;
 	text-decoration: none;
@@ -62,19 +64,19 @@ li, p {
 }
 
 .mastodon {
-	background-color: #523bc4;
+	background-color: var(--ctp-latte-mauve);
 }
 
 .github {
-	background-color: black;
+	background-color: var(--ctp-frappe-crust);
 }
 
 .imessage {
-	background-color: #387df6;
+	background-color: var(--ctp-latte-blue);
 }
 
 .email {
-	background-color: #EA4335;
+	background-color: var(--ctp-latte-red);
 }
 
 /* Properties for the icon inside of each link */
@@ -84,7 +86,7 @@ a svg {
 
 /* Display a solid black outline when selecting links using the tab key */
 a:focus-visible {
-	outline: 4px solid black;
+	outline: 4px solid var(--ctp-frappe-surface0)	;
 }
 
 .avatar {
@@ -106,11 +108,11 @@ a:focus-visible {
 .CopyKeyButton {
 	margin-left: 10px;
 	align-items: center;
-	background-color: #0A66C2;
+	background-color: var(--ctp-latte-blue);
 	border: 0;
 	border-radius: 100px;
 	box-sizing: border-box;
-	color: #ffffff;
+	color: var(--ctp-latte-mantle);
 	cursor: pointer;
 	display: inline-flex;
 	font: inherit;
@@ -129,52 +131,80 @@ a:focus-visible {
 
 .CopyKeyButton:hover,
 .CopyKeyButton:focus { 
-	background-color: #16437E;
-	color: #ffffff;
+	background-color: var(--ctp-latte-sky);
 }
 
 .CopyKeyButton:active {
-	background: #09223b;
-	color: rgb(255, 255, 255, .7);
+	background: var(--ctp-latte-lavender);
 	transform: scale(0.90);
 }
 
 #iMessagePublicKey {
 	max-width: fit-content;
 	margin-top: -20px;
-	border: 2px dashed black;
+	border: 2px dashed var(--ctp-latte-overlay0);
 	border-radius: 10px;
 	user-select: none;
 	font-size: 1.25rem;
 	word-wrap: break-word;
 }
 
+::selection {
+	background: rgba(var(--ctp-latte-blue-rgb) / 0.3);
+}
+
 /* Specify colors for dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
-		background: #0c0c0c;
-		color: white;
+		background: var(--ctp-mocha-base);
+		color: var(--ctp-mocha-text);
 	}
-
-	a.github {
-		color: black;
-		background-color: white;
+	
+	.links a {
+		color: var(--ctp-mocha-crust);
 	}
-
-	a {
-		color: #ffcb00;
+	
+	.mastodon {
+		background-color: var(--ctp-mocha-mauve);
 	}
+	
+	.github {
+		background-color: var(--ctp-mocha-text);
+	}
+	
+	.imessage {
+		background-color: var(--ctp-mocha-blue);
+	}
+	
+	.email {
+		background-color: var(--ctp-mocha-red);
+	}	
 	
 	::selection {
-		background: rgba(255, 203, 0, 0.5);
+		background: rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
 	}
 	
+	
 	a:focus-visible {
-		outline: 4px solid white;
+		outline: 4px solid var(--ctp-latte-crust	);
+	}
+	
+	.CopyKeyButton {
+		background-color: var(--ctp-mocha-blue);
+		color: var(--ctp-mocha-crust);
+	}
+	
+	.CopyKeyButton:hover,
+	.CopyKeyButton:focus { 
+		background-color: var(--ctp-mocha-sky);
+	}
+	
+	.CopyKeyButton:active {
+		background: var(--ctp-mocha-lavender);
 	}
 	
 	#iMessagePublicKey {
-		border-color: white;
+		border-color: var(--ctp-mocha-overlay0);
 	}
 }
 
