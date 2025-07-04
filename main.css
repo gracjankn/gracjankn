@@ -247,3 +247,11 @@ a:focus-visible {
 		margin-top: 15px;
 	}
 }
+
+/* Disable transitions when a person has reduced motion enabled */
+@media (prefers-reduced-motion: reduce) {
+	.links a, .CopyKeyButton {
+		transition: none;
+		transform: none;
+	}
+}
