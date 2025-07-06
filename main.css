@@ -209,6 +209,69 @@ a:focus-visible {
 	}
 }
 
+/* Change light mode colors if a person prefers more contrast */
+@media (prefers-contrast: more) {
+	:root {
+		color: black;
+		background-color: white;
+	}
+	
+	.links a, .CopyKeyButton {
+		color: white;
+	}
+	
+	.github {
+		background-color: black;
+	}  
+	
+	.CopyKeyButton {
+		color: white;
+	}
+	
+	::selection {
+		color: white;
+		background: var(--ctp-latte-blue);
+	}
+}
+
+/* Change dark mode colors if a person prefers more contrast */
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+	:root {
+		color: white;
+		background-color: black;
+	}
+	
+	.links a, .CopyKeyButton {
+		color: white;
+	}
+	
+	.mastodon {
+		background-color: var(--ctp-latte-mauve);
+	}
+	
+	.links a.github {
+		color: black;
+		background-color: white;
+	}
+	
+	.imessage {
+		background-color: var(--ctp-latte-blue);
+	}
+	
+	.email {
+		background-color: var(--ctp-latte-red);
+	}
+	
+	.CopyKeyButton {
+		background-color: var(--ctp-latte-blue);
+	}
+	
+	::selection {
+		color: white;
+		background: var(--ctp-latte-blue);
+	}
+}
+
 /* Properties for devices with small screens (width of 650px or lower) */
 @media (max-width: 650px) {
 	img {
