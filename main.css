@@ -39,7 +39,7 @@ li, p {
 
 /* Properties for the entire links section */
 .links {
-	max-width: 60vw;
+	width: max(60vw, 100%);
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1em auto;
@@ -49,8 +49,8 @@ li, p {
 
 /* Properties for each individual link */
 .links a {
-	font-size: 1.75rem;
-	width: 25vw;
+	font-size: clamp(1.5rem, 4vw, 1.75rem);
+	width: max(25vw, 43%);
 	text-align: center;
 	color: var(--ctp-latte-mantle);
 	border-radius: 100px;
@@ -92,7 +92,7 @@ a:focus-visible {
 .avatar {
 	display: block;
 	margin: 1em auto;
-	max-width: 15em;
+	max-width: 100%;
 	height: auto;
 	object-fit: scale-down;
 }
@@ -103,6 +103,12 @@ a:focus-visible {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+}
+
+/* Styles every direct child element of PublicKeySection */
+.PublicKeySection > * {
+	margin-top: 0px;
+	margin-bottom: 7px;
 }
 
 .CopyKeyButton {
@@ -140,8 +146,7 @@ a:focus-visible {
 }
 
 #iMessagePublicKey {
-	max-width: fit-content;
-	margin-top: -20px;
+	max-width: 95%;
 	padding: 7px;
 	border: 2px dashed var(--ctp-latte-overlay0);
 	border-radius: 50px;
@@ -269,45 +274,6 @@ a:focus-visible {
 	::selection {
 		color: white;
 		background: var(--ctp-latte-blue);
-	}
-}
-
-/* Properties for devices with small screens (width of 650px or lower) */
-@media (max-width: 650px) {
-	img {
-		width: 100%;
-	}
-	
-	.contact {
-		margin: 1rem 0;
-	}
-	
-	.links {
-		max-width: 100%;
-	}
-	
-	.links a {
-		font-size: 1.5rem;
-		width: 43vw;
-	}
-	
-	.PublicKeySection {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-		
-	/* Styles every direct child element of PublicKeySection */
-	.PublicKeySection > * {
-		margin-top: 15px;
-		margin-bottom: 0px;
-		}
-	
-	#iMessagePublicKey {
-		width: 95%;
-		padding: 5px;
-		margin-top: 15px;
 	}
 }
 
