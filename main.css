@@ -37,6 +37,10 @@ li, p {
 	font-size: 1.25rem;
 }
 
+p {
+	text-wrap: pretty;
+}
+
 /* Properties for the entire links section */
 .links {
 	width: max(60vw, 100%);
