@@ -71,6 +71,10 @@ p {
 	background-color: var(--ctp-latte-mauve);
 }
 
+.forgejo {
+	background-color: var(--ctp-latte-peach);
+}
+
 .github {
 	background-color: var(--ctp-frappe-crust);
 }
@@ -178,6 +182,10 @@ a:focus-visible {
 		background-color: var(--ctp-mocha-mauve);
 	}
 	
+	.forgejo {
+		background-color: var(--ctp-mocha-peach);
+	}
+	
 	.github {
 		background-color: var(--ctp-mocha-text);
 	}
@@ -256,6 +264,10 @@ a:focus-visible {
 	
 	.mastodon {
 		background-color: var(--ctp-latte-mauve);
+	}
+	
+	.forgejo {
+		background-color: var(--ctp-latte-peach);
 	}
 	
 	.links a.github {
