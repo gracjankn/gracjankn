@@ -15,8 +15,7 @@
 	max-width: 900px;
 	margin: auto;
 	line-height: 1.7;
-	color: var(--ctp-latte-text);
-	background-color: var(--ctp-latte-base);
+	color: #202020;
 }
 
 /* Center and add margins to all headings and paragraphs */
@@ -27,6 +26,9 @@ h1, h2, p {
 h1 {
 	font-size: 3rem;
 	font-weight: 800;
+	background: linear-gradient(90deg, #FFE600, #FF7A00, #D300C5, #7A00FF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -54,12 +56,9 @@ p {
 /* Properties for each individual link */
 .links a {
 	font-size: clamp(1.5rem, 4vw, 1.75rem);
-	width: max(25vw, 43%);
 	text-align: center;
-	color: var(--ctp-latte-mantle);
 	border-radius: 100px;
 	padding: 5px;
-	text-decoration: none;
 	transition: transform 0.2s ease;
 }
 
@@ -68,28 +67,28 @@ p {
 }
 
 .mastodon {
-	background-color: var(--ctp-latte-mauve);
+	color: blueviolet;
 }
 
 .forgejo {
-	background-color: var(--ctp-latte-peach);
+	color: #f97f26;
 }
 
 .github {
-	background-color: var(--ctp-frappe-crust);
+	color: black;
 }
 
 .imessage {
-	background-color: var(--ctp-latte-blue);
+	color: deepskyblue;
 }
 
 .email {
-	background-color: var(--ctp-latte-red);
+	color: #e3218b;
 }
 
 /* Display a solid black outline when selecting links using the tab key */
 a:focus-visible {
-	outline: 4px solid var(--ctp-frappe-surface0)	;
+	outline: 4px solid;
 }
 
 .avatar {
@@ -117,11 +116,11 @@ a:focus-visible {
 .CopyKeyButton {
 	margin-left: 10px;
 	align-items: center;
-	background-color: var(--ctp-latte-blue);
+	background-color: deepskyblue;
 	border: 0;
 	border-radius: 100px;
 	box-sizing: border-box;
-	color: var(--ctp-latte-mantle);
+	color: white;
 	cursor: pointer;
 	display: inline-flex;
 	font: inherit;
@@ -134,86 +133,73 @@ a:focus-visible {
 	vertical-align: middle;
 }
 
-.CopyKeyButton:hover,
-.CopyKeyButton:focus { 
-	background-color: var(--ctp-latte-sky);
+.CopyKeyButton:focus-visible { 
+	outline: 4px solid black;
 }
 
 .CopyKeyButton:active {
-	background: var(--ctp-latte-lavender);
+	background: indigo;
 	transform: scale(0.90);
 }
 
 #iMessagePublicKey {
 	max-width: 95%;
 	padding: 7px;
-	border: 2px dashed var(--ctp-latte-overlay0);
+	border: 2px dashed gray;
 	border-radius: 50px;
 	user-select: none;
 	font-size: 1.25rem;
 	word-wrap: break-word;
 }
 
-::selection {
-	background: rgba(var(--ctp-latte-blue-rgb) / 0.3);
-}
-
 /* Specify colors for dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
-		background: var(--ctp-mocha-base);
-		color: var(--ctp-mocha-text);
-	}
-	
-	.links a {
-		color: var(--ctp-mocha-crust);
+		background: #202020;
+		color: #FAFAFA	;
 	}
 	
 	.mastodon {
-		background-color: var(--ctp-mocha-mauve);
+		color: #858AFA;
 	}
 	
 	.forgejo {
-		background-color: var(--ctp-mocha-peach);
+		color: #ff8f40;
 	}
 	
 	.github {
-		background-color: var(--ctp-mocha-text);
+		color: #f1f1f1;
 	}
 	
 	.imessage {
-		background-color: var(--ctp-mocha-blue);
+		color: #53aefe;
 	}
 	
-	.email {
-		background-color: var(--ctp-mocha-red);
-	}	
-	
 	::selection {
-		background: rgba(var(--ctp-mocha-overlay2-rgb) / 0.3);
+		color: white;
+		background: #ffbb33;
 	}
 	
 	
 	a:focus-visible {
-		outline: 4px solid var(--ctp-latte-crust	);
+		outline: 4px solid;
 	}
 	
 	.CopyKeyButton {
-		background-color: var(--ctp-mocha-blue);
-		color: var(--ctp-mocha-crust);
+		background-color: #53aefe;
+		color: white;
 	}
 	
-	.CopyKeyButton:hover,
-	.CopyKeyButton:focus { 
-		background-color: var(--ctp-mocha-sky);
+	.CopyKeyButton:focus-visible { 
+		outline-color: white;
 	}
 	
 	.CopyKeyButton:active {
-		background: var(--ctp-mocha-lavender);
+		background: dodgerblue;
 	}
 	
 	#iMessagePublicKey {
-		border-color: var(--ctp-mocha-overlay0);
+		border-color: gray;
 	}
 }
 
@@ -224,21 +210,12 @@ a:focus-visible {
 		background-color: white;
 	}
 	
-	.links a, .CopyKeyButton {
-		color: white;
-	}
-	
-	.github {
-		background-color: black;
-	}  
-	
 	.CopyKeyButton {
 		color: white;
 	}
 	
-	::selection {
-		color: white;
-		background: var(--ctp-latte-blue);
+	.github {
+		color: black;
 	}
 }
 
@@ -249,38 +226,30 @@ a:focus-visible {
 		background-color: black;
 	}
 	
-	.links a, .CopyKeyButton {
+	.CopyKeyButton {
 		color: white;
 	}
 	
 	.mastodon {
-		background-color: var(--ctp-latte-mauve);
+		color: violet;
 	}
 	
-	.forgejo {
-		background-color: var(--ctp-latte-peach);
-	}
-	
-	.links a.github {
-		color: black;
-		background-color: white;
+	.github {
+		color: white;
 	}
 	
 	.imessage {
-		background-color: var(--ctp-latte-blue);
-	}
-	
-	.email {
-		background-color: var(--ctp-latte-red);
+		color: deepskyblue;
 	}
 	
 	.CopyKeyButton {
-		background-color: var(--ctp-latte-blue);
+		background-color: deepskyblue;
+		color: black;
 	}
 	
 	::selection {
 		color: white;
-		background: var(--ctp-latte-blue);
+		background: #ffbb33;
 	}
 }
 
