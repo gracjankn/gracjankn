@@ -87,11 +87,6 @@ p {
 	background-color: var(--ctp-latte-red);
 }
 
-/* Add a bit of padding on the right of each icon */
-svg {
-	padding-right: .3rem;
-}
-
 /* Display a solid black outline when selecting links using the tab key */
 a:focus-visible {
 	outline: 4px solid var(--ctp-frappe-surface0)	;
