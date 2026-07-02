@@ -43,14 +43,22 @@ p {
 	text-wrap: pretty;
 }
 
-/* Properties for the entire links section */
-.links {
+/* Properties for the entire metadata and links sections */
+ .metadata, .links {
 	width: max(60vw, 100%);
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1em auto;
 	justify-content: center;
 	gap: 0.4rem;
+}
+
+/* Properties for each segment of the metadata section */
+.metadata div {
+	font-size: 1.4rem;
+	text-align: center;
+	padding: 5px;
+	margin-top: -2rem;
 }
 
 /* Properties for each individual link */
