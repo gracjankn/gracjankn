@@ -136,7 +136,7 @@ a:focus-visible {
 	padding-right: 20px;
 	text-align: center;
 	touch-action: manipulation;
-	transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	transition: all 0.167s cubic-bezier(0.4, 0, 0.2, 1);
 	transition: transform 0.2s ease;
 	vertical-align: middle;
 }
