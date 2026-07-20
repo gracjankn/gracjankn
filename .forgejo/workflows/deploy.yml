@@ -1,0 +1,34 @@
+name: Deploy to Caddy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: docker
+    container:
+      image: node:20-bookworm
+      volumes:
+        - /var/www/html:/var/www/html
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # If your repo is already plain HTML/CSS/JS, skip the build step.
+      # If you use a generator (Hugo, Zola, etc.), add the build here, e.g.:
+      # - name: Build
+      #   run: |
+      #     apk add --no-cache hugo
+      #     hugo --destination public
+
+      - name: Deploy
+        run: |
+          # Adjust "public" to whatever directory holds your built site.
+          # If the repo root IS the site, use "." instead of "public".
+          mkdir -p /var/www/html/gracjan.xyz
+          rm -rf /var/www/html/gracjan.xyz/*
+          find . -type f \
+          -not -path '*/.git/*' \
+          -not -path '*/.forgejo/*' \
+          -exec cp -a --parents {} /var/www/html/gracjan.xyz/ \;
