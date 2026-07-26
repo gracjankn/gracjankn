@@ -74,6 +74,10 @@ p {
 	transform: scale(0.90);
 }
 
+.blog {
+	color: seagreen;
+}
+
 .mastodon {
 	color: blueviolet;
 }
@@ -165,6 +169,10 @@ a:focus-visible {
 	:root {
 		background: #202020;
 		color: #FAFAFA	;
+	}
+	
+	.blog {
+		color: aquamarine;
 	}
 	
 	.mastodon {
