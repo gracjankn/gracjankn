@@ -90,14 +90,6 @@ p {
 	color: black;
 }
 
-.imessage {
-	color: deepskyblue;
-}
-
-.email {
-	color: #e3218b;
-}
-
 /* Display a solid black outline when selecting links using the tab key */
 a:focus-visible {
 	outline: 4px solid;
@@ -187,10 +179,6 @@ a:focus-visible {
 		color: #f1f1f1;
 	}
 	
-	.imessage {
-		color: #53aefe;
-	}
-	
 	::selection {
 		color: white;
 		background: #ffbb33;
@@ -252,10 +240,6 @@ a:focus-visible {
 	
 	.github {
 		color: white;
-	}
-	
-	.imessage {
-		color: deepskyblue;
 	}
 	
 	.CopyKeyButton {
